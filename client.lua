@@ -15,3 +15,6 @@ Citizen.CreateThread(function()
     })
   end)
   
+AddEventHandler("playerSpawned", function()
+  TriggerClientEvent("aop:update", source, currentAOP)
+end)
