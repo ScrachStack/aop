@@ -6,6 +6,3 @@ RegisterCommand("setaop", function(source, args, rawCommand)
   TriggerClientEvent("aop:update", -1, PATROL)
 end, true)  
 
-AddEventHandler("playerSpawned", function()
-  TriggerClientEvent("aop:update", source, currentAOP)
-end)
