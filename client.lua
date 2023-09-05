@@ -17,3 +17,7 @@ SendNUIMessage({
   action = "updateAOP",
   aop = "Area Of Patrol Has Not Been Set. Use /setaop"
 })
+
+  TriggerEvent("chat:addSuggestion", "/setaop", "Sets the AOP", {
+    { name="Area", help="Manhattan, Statewide, Bronx" }
+})
