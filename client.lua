@@ -4,6 +4,9 @@ AddEventHandler('aop:update', function(aop)
     action = "updateAOP",
     aop = aop
   })
+        BeginTextCommandDisplayHelp("STRING")
+    AddTextComponentSubstringPlayerName("AOP: " .. aop .. 'Has been changed!')
+    EndTextCommandDisplayHelp(0, false, true, -1)
 end)
 
 AddEventHandler('playerSpawned', function()
